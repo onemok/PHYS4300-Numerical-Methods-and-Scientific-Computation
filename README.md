@@ -1,5 +1,4 @@
-# Numerical Methods and Scientific Computing
-Onemo Kang 
+# [PHYS4300] Numerical Methods and Scientific Computing
 
 ## Description
 Projects I completed as a Physics undergraduate student for PHYS4300 can be found in this repository. 
