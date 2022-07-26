@@ -33,12 +33,14 @@ Run these commands in terminal to check if you have the dependencies
 ```sh
 /usr/bin/xcodebuild -version 
 which brew
-g++ --version 
+g++ --version
+which gnuplot
 ```
 If not, install them
 * [XCode Command Line Tools](https://apps.apple.com/us/app/xcode/id497799835?mt=12)
 * [Homebrew](https://brew.sh/index.html)
 * GNU ```brew install gcc```
+* GNUplot ```brew install gnuplot```
 
 ### Executing program
 Switch to /PHYS4300-Numerical-Methods-and-Scientific-Computation/Project 1
