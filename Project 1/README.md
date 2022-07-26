@@ -1,10 +1,10 @@
 # Project 1: Newton-Raphson method
 
-This project was to use the Newton-Raphson method to find solutions of a function.
+Use the Newton-Raphson method to find solutions of a function.
 
 ## Description
 
-Develop c++ and python codes to find all real solutions of
+Develop c++ codes to find all real solutions of
 
 <p align="center">
     $f(x)=tanh(ax)−x=0,$
@@ -35,6 +35,7 @@ Run these commands in terminal to check if you have the dependencies
 which brew
 g++ --version 
 ```
+If not, install them
 * [XCode Command Line Tools](https://apps.apple.com/us/app/xcode/id497799835?mt=12)
 * [Homebrew](https://brew.sh/index.html)
 * GNU ```brew install gcc```
@@ -52,15 +53,13 @@ g++ <filename>
 ```
 
 ## Results
-I coded multiple programs that do different tasks in order to use the Newton-Raphson method and classify the stability of the fixed points.
-
-### Program 1: 
+### Program 1 - 0.8.C
 Purpose: Find a fixed point for a=0.8
 
-Instructions: Run the program and enter any number.
+Instruction: Run the program and enter any number.
 
 Output: 
-```c_cpp
+```sh
 x = ? 15
    0                  15                 -14                 -14
    1                   1           -0.335963           -0.607797
@@ -77,11 +76,11 @@ For the function f(x)=tanh(ax)-x=0, there must be a fixed point at x= 0 when a=0
 ```
 Analysis: After trying different values of x, you can see that there is a fixed point at x=0 for the function f(x) when a=0.8
 
-### Program 2:
+### Program 2 - 0.8.stability.C
 Purpose: Tells whether the fixed point is stable or not (a=0.8)
 
 Output:
-```c_cpp
+```sh
 x = ? 0
   -0
 The alpha, or g'(x), is -0
@@ -91,13 +90,12 @@ Analysis: In the previous program, we found x=0 as a fixed point.
 Thus, using this value, we found the alpha, which is also zero. 
 This fixed point (x=0) is stable. 
 
-### Program 3
+### Program 3 - 1.2.C
 
 Purpose: Finds fixed point for a=1.2
 
 Output:
-
-```c_cpp
+```sh
 x = ? -5
    0                  -5             4.00001             4.00013
    1            -0.99987            0.166263            0.262294
@@ -113,7 +111,7 @@ x = ? -5
 For the function f(x)=tanh(ax)-x=0, there must be a fixed point at x= -0.65857 when a=1.2 
 ```
 
-```c_cpp
+```sh
 x = ? 0.2
    0                 0.2           0.0354957           -0.265985
    1          -0.0659852           -0.013032           0.0676959
@@ -129,7 +127,7 @@ x = ? 0.2
 For the function f(x)=tanh(ax)-x=0, there must be a fixed point at x= 0 when a=1.2 
 ```
 
-```c_cpp
+```sh
 x = ? 5
    0                   5            -4.00001            -4.00013
    1             0.99987           -0.166263           -0.262294
@@ -145,35 +143,42 @@ x = ? 5
 For the function f(x)=tanh(ax)-x=0, there must be a fixed point at x= 0.65857 when a=1.2 
 ```
 
-
 Analysis: After trying different values of x, you can see that there are fixed points at 
 x= -0.65857
 x= 0
 x= 0.65857
 for f(x) when a=1.2
 
-### Program 4:
+### Program 4 - 1.2.stability.C
 
 Purpose: Tells whether the fixed point is stable or not (a=1.2)
 
 Output:
 
 x= -0.65857
+```sh
+x = ? -0.65857
+1.1382e-06
+The alpha, or g'(x), is 1.1382e-06
+```
 
-![1 2Stability1](https://user-images.githubusercontent.com/87621598/180703134-3c4e7385-210f-4d7d-b8c1-0584a0a959f1.png)
+x = 0
+```sh
+x = ? 0
+  -0
+The alpha, or g'(x), is -0
+```
+x = 0.65857
 
-x= 0
-
-![1 2Stability2](https://user-images.githubusercontent.com/87621598/180703199-dd96f8a5-b72d-4416-92cc-158b2f6329e1.png)
-
-x=0.65857
-
-![1 2Stability3](https://user-images.githubusercontent.com/87621598/180703026-e39e0639-c972-41f9-a506-c29f7489ce2c.png)
-
+```sh
+x = ? 0.65857
+1.1382e-06
+The alpha, or g'(x), is 1.1382e-06
+```
 
 Analysis: As you can see, the alpha’s for all three fixed points are less than 1.
 Therefore, they are all stable. 
 
 ## Conclusion:
-When a increases through 1, you can observe from the f(x) vs. x graph that the number of intersections between f(x) and the x-axis changes from 1 to 3. This means that the number of fixed points go from 1 to 3. Thus, explains why for a=0.8 there is only one fixed point at x=0. But for a=1.2, there are three fixed points. 
+When $a$ is 1, you can observe from the f(x) vs. x graph that the number of intersections between f(x) and the x-axis changes from 1 to 3. This means that the number of fixed points increases from 1 to 3. Thus, this explains why for a=0.8 there is only one fixed point at x=0. But for a=1.2, there are three fixed points. 
 It is important to note that the fixed points always lie between x=[0,1]. No matter how big “a” is, the fixed points do not go beyond x=1. 
