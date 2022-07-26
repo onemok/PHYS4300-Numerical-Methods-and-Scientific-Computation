@@ -4,10 +4,10 @@
 // g'(x)= -2(a^2)tanh(ax)(tanh(ax)-x)sech^2(ax) / (a*sech^2(ax)-1)^2
 // If alpha is bigger than 1, then it is an unstable point. 
 // If alpha issmaller than 1, then it is a stable point. 
-using namespace std;
 #include <iostream>
 #include <iomanip>
 #include <math.h>
+using namespace std;
 
 const double a=0.8 ;
 

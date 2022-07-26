@@ -9,10 +9,10 @@
 // An initial x value, which was used to find a fixed point for f(x)
 // Note: sech did not work, so it was converted to cosh 
 //-------------------------------------------------------------------------
-using namespace std;
 #include <iostream>
 #include <iomanip>
 #include <math.h>
+using namespace std;
 
 const double a=1.2 ;
 
