@@ -29,42 +29,63 @@ Briefly describe what happens to the solutions when a increases through one, usi
 ## Getting Started
 
 ### Dependencies
-
-* Describe any prerequisites, libraries, OS version, etc., needed before installing program.
-* ex. Windows 10
-
-### Installing
-
-* How/where to download your program
-* Any modifications needed to be made to files/folders
+Run these commands in terminal to check if you have the dependencies 
+```sh
+/usr/bin/xcodebuild -version 
+which brew
+g++ --version 
+```
+* [XCode Command Line Tools](https://apps.apple.com/us/app/xcode/id497799835?mt=12)
+* [Homebrew](https://brew.sh/index.html)
+* GNU ```brew install gcc```
 
 ### Executing program
+Switch to /PHYS4300-Numerical-Methods-and-Scientific-Computation/Project 1
 
-* How to run the program
-* Step-by-step bullets
+* To compile a C++ code, use:
+```sh
+g++ <filename>
 ```
-code blocks for commands
+* To run the C++ code:
+```sh
+./a.out
 ```
 
 ## Results
 I coded multiple programs that do different tasks in order to use the Newton-Raphson method and classify the stability of the fixed points.
 
 ### Program 1: 
-Purpose: Finds a fixed point for a=0.8
+Purpose: Find a fixed point for a=0.8
+
+Instructions: Run the program and enter any number.
 
 Output: 
-
-![0 8Output](https://user-images.githubusercontent.com/87621598/180702072-847ceff0-a1b7-4c25-960e-b29ed04630a9.png)
-
+```c_cpp
+x = ? 15
+   0                  15                 -14                 -14
+   1                   1           -0.335963           -0.607797
+   2            0.392203           -0.088347           -0.322596
+   3           0.0696073          -0.0139789          -0.0690401
+   4         0.000567144        -0.000113429        -0.000567144
+   5         3.11335e-10         -6.2267e-11        -3.11335e-10
+   6         5.16988e-26        -1.03398e-26        -5.16988e-26
+   7                   0                   0                   0
+   8                   0                   0                   0
+   9                   0                   0                   0
+  10                   0                   0                   0
+For the function f(x)=tanh(ax)-x=0, there must be a fixed point at x= 0 when a=0.8 
+```
 Analysis: After trying different values of x, you can see that there is a fixed point at x=0 for the function f(x) when a=0.8
 
 ### Program 2:
 Purpose: Tells whether the fixed point is stable or not (a=0.8)
 
 Output:
-
-![0 8Stability](https://user-images.githubusercontent.com/87621598/180702398-c14879ea-4500-453f-b6fb-8b0c6faec7a9.png)
-
+```c_cpp
+x = ? 0
+  -0
+The alpha, or g'(x), is -0
+```
 
 Analysis: In the previous program, we found x=0 as a fixed point. 
 Thus, using this value, we found the alpha, which is also zero. 
@@ -76,9 +97,53 @@ Purpose: Finds fixed point for a=1.2
 
 Output:
 
-![1 2Result](https://user-images.githubusercontent.com/87621598/180702612-ebdbfefd-78ca-4d66-a845-67b623ebd8b2.png)
-![1 2Result2](https://user-images.githubusercontent.com/87621598/180702759-5acf299b-6853-492a-8272-9bbc82993395.png)
-![1 2Result3](https://user-images.githubusercontent.com/87621598/180702840-6ea8d1e6-0be6-4936-a232-0a386e1d9d0b.png)
+```c_cpp
+x = ? -5
+   0                  -5             4.00001             4.00013
+   1            -0.99987            0.166263            0.262294
+   2           -0.737576           0.0286154           0.0709793
+   3           -0.666597          0.00260691          0.00792231
+   4           -0.658675         3.36039e-05         0.000104826
+   5            -0.65857         5.90091e-09          1.8414e-08
+   6            -0.65857         1.11022e-16         3.33067e-16
+   7            -0.65857         1.11022e-16         3.33067e-16
+   8            -0.65857        -1.11022e-16        -3.33067e-16
+   9            -0.65857         1.11022e-16         3.33067e-16
+  10            -0.65857        -1.11022e-16        -3.33067e-16
+For the function f(x)=tanh(ax)-x=0, there must be a fixed point at x= -0.65857 when a=1.2 
+```
+
+```c_cpp
+x = ? 0.2
+   0                 0.2           0.0354957           -0.265985
+   1          -0.0659852           -0.013032           0.0676959
+   2          0.00171068         0.000342133         -0.00171071
+   3        -2.88361e-08        -5.76723e-09         2.88361e-08
+   4         1.75362e-22         3.50725e-23        -1.75362e-22
+   5         4.70198e-38         9.40395e-39        -4.70198e-38
+   6                   0                   0                   0
+   7                   0                   0                   0
+   8                   0                   0                   0
+   9                   0                   0                   0
+  10                   0                   0                   0
+For the function f(x)=tanh(ax)-x=0, there must be a fixed point at x= 0 when a=1.2 
+```
+
+```c_cpp
+x = ? 5
+   0                   5            -4.00001            -4.00013
+   1             0.99987           -0.166263           -0.262294
+   2            0.737576          -0.0286154          -0.0709793
+   3            0.666597         -0.00260691         -0.00792231
+   4            0.658675        -3.36039e-05        -0.000104826
+   5             0.65857        -5.90091e-09         -1.8414e-08
+   6             0.65857        -1.11022e-16        -3.33067e-16
+   7             0.65857        -1.11022e-16        -3.33067e-16
+   8             0.65857         1.11022e-16         3.33067e-16
+   9             0.65857        -1.11022e-16        -3.33067e-16
+  10             0.65857         1.11022e-16         3.33067e-16
+For the function f(x)=tanh(ax)-x=0, there must be a fixed point at x= 0.65857 when a=1.2 
+```
 
 
 Analysis: After trying different values of x, you can see that there are fixed points at 
