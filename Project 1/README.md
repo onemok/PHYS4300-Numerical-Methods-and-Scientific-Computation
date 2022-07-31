@@ -4,27 +4,41 @@ Use the Newton-Raphson method to find solutions of a function.
 
 ## Description
 
-Develop c++ codes to find all real solutions of
+<p align="center">
+    Develop c++ codes to find all real solutions of
+</p>
 
 <p align="center">
     $f(x)=tanh(ax)−x=0,$
 </p>
 
-for a=0.8 and for a=1.2, by searching for fixed points of the recusion relation xn+1=g(xn). Contrast two choices of the function g, namely the simple method
-
+<p align="center">
+for $a=0.8$ and for $a=1.2$, by searching for fixed points of the recusion relation $x_n+1=g(x_n)$
+</p><br>
+<p align="center">
+Contrast two choices of the function g, namely the simple method
+</p>
 <p align="center">
     $$g_0(x)=tanh(ax)$$
 </p>
-
-vs. the Newton-Raphson method
-
 <p align="center">
-    $$g_{NR}(x)=x−{f(x) \over f′(x)}.$$
+vs. the Newton-Raphson method
 </p>
-
-Use the Newton-Raphson method to find all the solutions for the two cases. Plot y=tanh(ax) and y=x to visually see the solutions for the two vales of a. Classify the stability (stable vs unstable ) of the fixed point(s) for both the simple g0(x) and the Newton-Raphson gNR(x). 
-
-Briefly describe what happens to the solutions when a increases through one, using a concept we used in the Logistic map when r increases through 34.
+<p align="center">
+    $$g_{NR}(x)=x−{f(x) \over f′(x)}$$
+</p>
+<p align="center">
+Use the Newton-Raphson method to find all the solutions for the two cases. 
+</p>
+<p align="center"> 
+Plot $y=tanh(ax)$ and $y=x$  to visually see the solutions for the two vales of $a$. 
+</p>
+<br>
+<p align="center">Classify the stability (stable vs. unstable) of the fixed point(s) for the Newton-Raphson $g_{NR}(x)$. 
+</p>
+<p align="center"> 
+Briefly describe what happens to the solutions when a increases through one.
+</p>
 
 ## Getting Started
 
@@ -83,6 +97,10 @@ x = ? 15
 For the function f(x)=tanh(ax)-x=0, there must be a fixed point at x= 0 when a=0.8 
 ```
 Analysis: After trying different values of x, you can see that there is a fixed point at x=0 for the function f(x) when a=0.8
+
+### Program 1.1 - 0.8.gnu
+![Plot for a=0.8](/Project 1/plot_0.8.png?raw=true "Title")
+
 
 ### Program 2 - 0.8.stability.C
 Purpose: Tells whether the fixed point is stable or not (a=0.8)
