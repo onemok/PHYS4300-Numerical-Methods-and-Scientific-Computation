@@ -13,21 +13,35 @@ This course was taught by Professor Jan Engelbrecht at Boston College.
 ## Getting Started
 
 ### Dependencies
-* If you have a Mac it would be useful if you can install XQuartz (https://www.xquartz.org)
-* If you have a PC you should install mobaxterm (https://mobaxterm.mobatek.net) or something similar if you can. 
-
-### Installing
-
-* How/where to download your program
-* Any modifications needed to be made to files/folders
+Run these commands in terminal to check if you have the dependencies 
+```sh
+/usr/bin/xcodebuild -version 
+which brew
+g++ --version
+which gnuplot
+```
+If not, install them
+* [XCode Command Line Tools](https://apps.apple.com/us/app/xcode/id497799835?mt=12)
+* [Homebrew](https://brew.sh/index.html)
+* GNU ```brew install gcc```
+* GNUplot ```brew install gnuplot```
 
 ### Executing program
+Switch to /PHYS4300-Numerical-Methods-and-Scientific-Computation/Project 1
 
-* How to run the program
-* Step-by-step bullets
+* To compile a C++ code, use:
+```sh
+g++ <filename.C>
 ```
-code blocks for commands
+* To run the C++ code:
+```sh
+./a.out
 ```
+* To run .gnu files
+```sh
+gnuplot
+load "<filename.gnu>"
+````
 
 ## Contact
 
