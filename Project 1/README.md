@@ -99,6 +99,7 @@ Analysis: After trying different values of x, you can see that there is a fixed 
 
 ### Program 1.1 - 0.8.gnu
 Plot for a=0.8 to verify solutions
+<br>
 ![Plot for a=0.8](plot_0.8.png?raw=true "Title")
 
 
@@ -177,6 +178,7 @@ for f(x) when a=1.2
 
 ### Program 3.1 - 1.2.gnu
 Plot for a=1.2 to verify solutions
+<br>
 ![Plot for a=1.2](plot_1.2.png?raw=true "Title")
 
 ### Program 4 - 1.2.stability.C
