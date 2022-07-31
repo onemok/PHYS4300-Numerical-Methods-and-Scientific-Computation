@@ -19,6 +19,7 @@ double f(double x) {
   return tanh(a*x)-x;
 }
 
+// Newton-Raphson method
 double g(double x) {
   return (x-(tanh(a*x)-x)/(-1 + a*(1/cosh(a*x))*(1/cosh(a*x))));
 }

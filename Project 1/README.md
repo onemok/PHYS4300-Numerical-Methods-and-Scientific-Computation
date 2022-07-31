@@ -47,12 +47,18 @@ Switch to /PHYS4300-Numerical-Methods-and-Scientific-Computation/Project 1
 
 * To compile a C++ code, use:
 ```sh
-g++ <filename>
+g++ <filename.C>
 ```
 * To run the C++ code:
 ```sh
 ./a.out
 ```
+
+* To run .gnu files
+```sh
+gnuplot
+load "<filename.gnu>"
+````
 
 ## Results
 ### Program 1 - 0.8.C
@@ -182,5 +188,5 @@ Analysis: As you can see, the alpha’s for all three fixed points are less than
 Therefore, they are all stable. 
 
 ## Conclusion:
-When $a$ is 1, you can observe from the f(x) vs. x graph that the number of intersections between f(x) and the x-axis changes from 1 to 3. This means that the number of fixed points increases from 1 to 3. Thus, this explains why for a=0.8 there is only one fixed point at x=0. But for a=1.2, there are three fixed points. 
+When $a$ goes through 1, you can observe from the f(x) vs. x graph that the number of intersections between f(x) and the x-axis changes from 1 to 3. This means that the number of fixed points increases from 1 to 3. Thus, this explains why for a=0.8 there is only one fixed point at x=0. But for a=1.2, there are three fixed points. 
 It is important to note that the fixed points always lie between x=[0,1]. No matter how big “a” is, the fixed points do not go beyond x=1. 

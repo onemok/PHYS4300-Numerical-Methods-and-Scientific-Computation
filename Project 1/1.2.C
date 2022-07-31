@@ -12,6 +12,7 @@
 #include <iostream>
 #include <iomanip>
 #include <math.h>
+#include <fstream>
 using namespace std;
 
 const double a=1.2 ;
@@ -20,6 +21,7 @@ double f(double x) {
   return tanh(a*x)-x;
 }
 
+// Newton-Raphson method
 double g(double x) {
   return (x-(tanh(a*x)-x)/(-1 + a*(1/cosh(a*x))*(1/cosh(a*x))));
 }
@@ -34,6 +36,10 @@ int main(){
     x=g(x);
   }
 
+  std::ofstream file("1.2.dat");
+
 cout << "For the function f(x)=tanh(ax)-x=0, there must be a fixed point at x= " << x <<  " when a=1.2 \n";
 
 }
+
+
