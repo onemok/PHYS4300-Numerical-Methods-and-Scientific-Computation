@@ -99,7 +99,7 @@ For the function f(x)=tanh(ax)-x=0, there must be a fixed point at x= 0 when a=0
 Analysis: After trying different values of x, you can see that there is a fixed point at x=0 for the function f(x) when a=0.8
 
 ### Program 1.1 - 0.8.gnu
-![Plot for a=0.8](/Project 1/plot_0.8.png?raw=true "Title")
+![Plot for a=0.8](/plot_0.8.png?raw=true "Title")
 
 
 ### Program 2 - 0.8.stability.C
@@ -174,6 +174,9 @@ x= -0.65857
 x= 0
 x= 0.65857
 for f(x) when a=1.2
+
+### Program 3.1 - 1.2.gnu
+![Plot for a=1.2](/plot_1.2.png?raw=true "Title")
 
 ### Program 4 - 1.2.stability.C
 
