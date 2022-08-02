@@ -71,7 +71,7 @@ g++ <filename.C>
 ```sh
 gnuplot
 load "<filename.gnu>"
-````
+```
 
 ## Results
 ### Program 1 - 0.8.C
