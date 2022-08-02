@@ -55,63 +55,26 @@ load "<filename.gnu>"
 ## Results
 The parameter r for which the sine-map iterates to a period-1, period-2, and a period-4 limit cycle was determined.
 g(x)=rsin(pi*x)
+
 ### Case 1: Period-1 
-File: r0.5.C
-Purpose: Find a period-1 cycle (r = 0.5)
-Find x values for r=0.5
-
-#### Output: 
-```sh
- 0.9                   0
- 0.9            0.154508
-0.154508            0.154508
-0.154508            0.233282
-0.233282            0.233282
-0.233282            0.334506
-0.334506            0.334506
-0.334506            0.433931
-0.433931            0.433931
-0.433931            0.489268
-0.489268            0.489268
-0.489268            0.499716
-0.499716            0.499716
-0.499716                 0.5
- 0.5                 0.5
- 0.5                 0.5
- 0.5                 0.5
- 0.5                 0.5
- 0.5                 0.5
- 0.5                 0.5
- 0.5                 0.5
- ...                 ...
-```
+- File: r0.5.C
+- Purpose: Find a period-1 cycle (r = 0.5)
 #### Plot - 0.5.gnu
-
+![r=0.5 plot](r0.5.png?raw=true "Title")
 #### Analysis: 
 
 ### Case 2: Period-2
-File: r0.75.C
-Purpose: Find a period-2 cycle (r = 0.75)
-Find x values for r=0.75
-
-#### Output: 
-```sh
- 
-```
+- File: r0.75.C
+- Purpose: Find a period-2 cycle (r = 0.75)
 #### Plot - 0.75.gnu
-
+![r=0.75 plot](r0.75.png?raw=true "Title")
 #### Analysis: 
 
 ### Case 3: Period-3
-File: r0.84.C
-#### Purpose: Find x values for r=0.84
-
-#### Output: 
-```sh
-
-```
+- File: r0.84.C
+- Purpose: Find a period-4 cycle (r = 0.84)
 #### Plot - 0.84.gnu
-
+![r=0.84 plot](r0.84.png?raw=true "Title")
 #### Analysis: 
 
 ## Conclusion:
