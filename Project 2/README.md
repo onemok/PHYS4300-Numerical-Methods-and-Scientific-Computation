@@ -60,7 +60,7 @@ $g(x)=rsin(πx)$
 - File: r0.5.C
 - Purpose: Find a period-1 cycle (r = 0.5)
 #### Plot - 0.5.gnu
-![r=0.5 plot](r0.5.png?raw=true "Title")
+![r=0.5 plot](r0.5/r0.5.png?raw=true "Title")
 #### Analysis
 The plot shows that the trajectory converges to the solution (x = 0.5).
 
@@ -68,7 +68,7 @@ The plot shows that the trajectory converges to the solution (x = 0.5).
 - File: r0.75.C
 - Purpose: Find a period-2 cycle (r = 0.75)
 #### Plot - 0.75.gnu
-![r=0.75 plot](r0.75.png?raw=true "Title")
+![r=0.75 plot](r0.75/r0.75.png?raw=true "Title")
 #### Analysis: 
 The plot shows that the first period doubling bifurcations occurs around r=0.75.
 
@@ -76,6 +76,6 @@ The plot shows that the first period doubling bifurcations occurs around r=0.75.
 - File: r0.84.C
 - Purpose: Find a period-4 cycle (r = 0.84)
 #### Plot - 0.84.gnu
-![r=0.84 plot](r0.84.png?raw=true "Title")
+![r=0.84 plot](r0.84/r0.84.png?raw=true "Title")
 #### Analysis: 
 The plot shows that the second period doubling bifurcations occurs around r=0.84.
