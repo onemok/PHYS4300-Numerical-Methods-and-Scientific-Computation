@@ -10,9 +10,9 @@ This course was taught by Professor Jan Engelbrecht at Boston College.
 *Prof. Jan Engelbrecht*
 
 ## Projects
-* [Project 1: Newton-Raphson method](./Project\ 1/README.md)
-* [Project 2: Period Doubling Bifurcations - Chaos and the Logistic Map](https://github.com/onemok/PHYS4300-Numerical-Methods-and-Scientific-Computation/tree/master/Project%202)
-* [Project 3: LU Decomposition](https://github.com/onemok/PHYS4300-Numerical-Methods-and-Scientific-Computation/tree/master/Project%202)
+* [Project 1: Newton-Raphson method](./Project%201)
+* [Project 2: Period Doubling Bifurcations - Chaos and the Logistic Map](./Project%202)
+* [Project 3: LU Decomposition](./Project%203)
 
 ## Getting Started
 
