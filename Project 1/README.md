@@ -40,39 +40,6 @@ Plot $y=tanh(ax)$ and $y=x$  to visually see the solutions for the two vales of 
 Briefly describe what happens to the solutions when a increases through one.
 </p>
 
-## Getting Started
-
-### Dependencies
-Run these commands in terminal to check if you have the dependencies 
-```sh
-/usr/bin/xcodebuild -version 
-which brew
-g++ --version
-which gnuplot
-```
-If not, install them
-* [XCode Command Line Tools](https://apps.apple.com/us/app/xcode/id497799835?mt=12)
-* [Homebrew](https://brew.sh/index.html)
-* GNU ```brew install gcc```
-* GNUplot ```brew install gnuplot```
-
-### Executing program
-Switch to /PHYS4300-Numerical-Methods-and-Scientific-Computation/Project 1
-
-* To compile a C++ code, use:
-```sh
-g++ <filename.C>
-```
-* To run the C++ code:
-```sh
-./a.out
-```
-* To run .gnu files
-```sh
-gnuplot
-load "<filename.gnu>"
-```
-
 ## Results
 ### Program 1 - 0.8.C
 Purpose: Find a fixed point for a=0.8

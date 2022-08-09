@@ -19,39 +19,6 @@ Numerically determine values for the parameter r for which the sine-map iterates
 Plot the curves $y=x$, $y=g(x)$ and the graphical representation for the iteration of the sine-map (cob-web diagram), for each of the 3 cases.
 </p>
 
-## Getting Started
-
-### Dependencies
-Run these commands in terminal to check if you have the dependencies 
-```sh
-/usr/bin/xcodebuild -version 
-which brew
-g++ --version
-which gnuplot
-```
-If not, install them
-* [XCode Command Line Tools](https://apps.apple.com/us/app/xcode/id497799835?mt=12)
-* [Homebrew](https://brew.sh/index.html)
-* GNU ```brew install gcc```
-* GNUplot ```brew install gnuplot```
-
-### Executing program
-Switch to /PHYS4300-Numerical-Methods-and-Scientific-Computation/Project 1
-
-* To compile a C++ code, use:
-```sh
-g++ <filename.C>
-```
-* To run the C++ code:
-```sh
-./a.out
-```
-* To run .gnu files
-```sh
-gnuplot
-load "<filename.gnu>"
-```
-
 ## Results
 The parameter r for which the sine-map iterates to a period-1, period-2, and a period-4 limit cycle was determined.
 $g(x)=rsin(πx)$

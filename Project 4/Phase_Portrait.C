@@ -14,15 +14,15 @@ using namespace std;
 
 /*
 Undriven-Undamped Nonlinear Oscillator
-    gam=0; a0=0
+    a0=0; gam=0; 
 Driven-Damped Nonlinear Oscillator
-    gam=0.5; a0=0.5
+    a0=0.5; gam=0.5; 
 Chaotic 
-    gam=0.5; a0=1.2
+    a0=1.2; gam=0.5; 
 
 change the below variables accordingly for undamped/damped/chaos 
 */
-const double a0=0.5;
+const double a0=1.2;
 const double gam=0.5;
 
 //time intervals
@@ -42,7 +42,7 @@ int main(){
 
     double told, tolder, xold, xolder, vold, volder, Eold, Eolder, tnew, xnew, vnew, Enew, q1x, q1v, q2x, q2v;
 
-    ofstream pp("damped_IC2.dat");
+    ofstream pp("chaotic.dat");
 
     // alternate these values to get all three initial conditions
     // xold=0.2; vold=0
@@ -50,7 +50,7 @@ int main(){
     // xold=0; vold=0.25
     told=0; 
     xold=0.2; 
-    vold=2;           
+    vold=0;           
 
     q1x=vold*dt;
     q1v=f(xold,vold,told)*dt;
