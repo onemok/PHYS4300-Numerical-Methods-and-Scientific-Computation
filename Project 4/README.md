@@ -10,13 +10,13 @@ Furthermore, the Poincare Section for the chaotic section was plotted.
 ## Description
 
 <p align="center">
-    a) Reproduce the phase portrait in the damped-driven nonlinear section that contrast that model with the undriven-undamped nonlinear oscillator.
+    Reproduce the phase portrait in the damped-driven nonlinear section that contrast that model with the undriven-undamped nonlinear oscillator.
 <br><br>
     Produce a plot with two panels.   In the first panel fix $γ=0.5$, $a_0=0.5$ and draw three orbits with initial conditions $(x_0,v_0)=(0.2,0)$ then $(0.2,2)$ and finally $(0,0.25)$.   In the second panel fix $γ=0, a0=0$ and draw three orbits with the same initial conditions.
 <br><br>
   Next consider the chaotic case $γ=0.5, a0=1.2$. Produce one plot of $(x,v)$ points.
 <br><br>
-  Recall that the dynamics is really 3D.   Next plot a Poincare Section of the data in b).
+  Recall that the dynamics is really 3D.   Next plot a Poincare Section of the data for the chaotic case.
 </p>
 
 ## Files
